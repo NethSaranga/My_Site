@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$Poppins: "Poppins", sans-serif;
+
+$blackFont: #292a31;
+$contentText:#5d5f6c;
+$backgroundGrey:#f6f7fb;
+$m1Color:#30d270;
+$greyOne:#5a5c6a;
+
+// Responsive Variables
+$xxl-layout: "only screen and (min-width: 1600px) and (max-width: 3000px)";
+$xx-layout: "only screen and (min-width: 1366px) and (max-width: 1600px)";
+$xl-layout: "only screen and (min-width: 1200px) and (max-width: 1366px)";
+$lg-layout: "only screen and (min-width: 993px) and (max-width: 1200px)";
+$md-layout: "only screen and (min-width: 768px) and (max-width: 992px)";
+$xs-layout: "only screen and (max-width: 768px)";
+$sm-layout: "only screen and (min-width: 480px) and (max-width: 768px)";
+$xxs-layout: "only screen and (min-width: 321px) and (max-width: 479px)";
+$xxxs-layout: "only screen and (max-width: 320px)";
+$ever-layout: "only screen and (min-width: 1600px)";

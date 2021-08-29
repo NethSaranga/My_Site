@@ -1,0 +1,73 @@
+.sideBar{
+  position: fixed;  
+}
+
+
+.line-1{
+  width: 3px;
+  height: 100vh;
+  margin-left: 75px;
+//   transform: rotate(90deg);
+  background-color: #eee;
+}
+
+.N{
+  position: absolute;
+  width: 61px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: BaskervilleOldFace;
+  font-size: 3.75rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #404040;
+}
+
+.S{
+position: absolute;
+  width: 23px;
+  height: 65px;
+  margin: 45px 21px 40px 39px;
+  font-family: BaskervilleOldFace;
+  font-size:  2.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ff4747;
+}
+
+.IconsDiv{
+    position:absolute;
+    // flex-direction: column;
+    // margin-top: 500px;
+
+}
+
+.Icons{
+    // position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 1.8rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.3;
+//   margin: 580px 30px 39px 27px;
+}
+.position{
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #404040;
+}
