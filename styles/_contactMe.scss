@@ -1,0 +1,144 @@
+.Message-Me {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  .Message-Me.dark{
+    transition-duration: $td;
+    color: $DarkHederFont;
+  
+  }
+  .Message-Me.light{
+    transition-duration: $td;
+    color: $LightHederFont;
+  
+  }
+
+
+  .contactInfo-p{
+   margin-top: 20px;
+   margin-bottom: 10px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    
+  }
+
+  .contactInfo-p.dark{
+    transition-duration: $td;
+    color: $DarkcontentText;
+  
+  }
+  .contactInfo-p.light{
+    transition-duration: $td;
+    color: $LightcontentText;
+  
+  }
+
+.Line-5{
+    position: absolute;
+    width: 3px;
+    height: 280px;
+    margin: 11px 10px 10px 50px;
+    background-color: #eee;
+
+}
+
+.Cemail{
+    margin-left: 70px;
+    margin-top: 25px;
+    font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+.Cemail.dark{
+  transition-duration: $td;
+  color: $DarkHederFont;
+
+}
+.Cemail.light{
+  transition-duration: $td;
+  color: $LightHederFont;
+
+}
+
+.Cmyemail{
+    margin-left: 70px;
+
+    width: 320px;
+    // background-color: #ff4747;
+    font-family: Poppins;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-top: 1px;
+}
+.Cmyemail.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
+.Cmyemail.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
+
+
+.name-Rectangle{
+    width: 249px;
+    height: 41px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    // margin: 20px 39px 32px 76px;
+    padding: 5px 178px 7px 13px;
+    background-color: #c4c4c4;
+}
+
+.email-Rectangle{
+    width: 394px;
+  height: 41px;
+  margin-top: 10px;
+//   margin: 20px 52px 32px 39px;
+  padding: 6px 305px 6px 9px;
+  background-color: #c4c4c4;
+}
+
+.subject-Rectangle{
+    width: 653px;
+    height: 41px;
+    margin-top: 10px;
+    // margin: 16px 52px 37px 76px;
+    padding: 6px 573px 6px 9px;
+    background-color: #c4c4c4;
+}
+
+.message-Rectangle{
+    width: 653px;
+    height: 161px;
+    margin-top: 10px;
+
+    // margin: 26px 52px 28px 76px;
+    padding: 4px 559px 128px 9px;
+    background-color: #c4c4c4;
+}

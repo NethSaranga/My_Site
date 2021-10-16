@@ -10,6 +10,16 @@
     z-index: 999;
 }
 
+.navBar.light{
+  transition-duration: $td;
+  background-color: $LightBG;
+}
+
+.navBar.dark{
+  transition-duration: $td;
+  background-color: $DarkBG;
+}
+
 .nabBarButn{
     // background-color: aqua;
   font-family: Poppins;
@@ -20,7 +30,17 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #000;
+  // color: $LightHederFont;
+}
+
+.nabBarButn.light{
+  transition-duration: $td;
+  color: $LightHederFont;
+}
+
+.nabBarButn.dark{
+  transition-duration: $td;
+  color: $DarkHederFont;
 }
 
 .nabBarcallButn{

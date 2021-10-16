@@ -15,9 +15,16 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #606060;
 }
+.hithere.light{
+  transition-duration: $td;
+  color: $LightHederFont;
+}
+.hithere.dark{
+  transition-duration: $td;
+  color: $DarkHederFont;
 
+}
 .Iam{
 //     width: 554px;
 //   height: 83px;
@@ -30,7 +37,17 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #404040;
+}
+
+.Iam.light{
+  transition-duration: $td;
+  color: $LightHederFont;
+
+}
+.Iam.dark{
+  transition-duration: $td;
+  color: $DarkHederFont;
+
 }
 
 .IamS{
@@ -47,6 +64,29 @@
       text-align: left;
       color: #ff4747;
     }
+
+    .position{
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #404040;
+    }
+
+.position.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
+.position.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
 
 .ask-me-how{
   width: 208px;
@@ -95,6 +135,26 @@
   color: #606060;
   margin-top: 1px;
 }
+.email.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
+.email.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
+.myemail.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
+.myemail.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
 
 .line-2{
     width: 3px;
@@ -115,6 +175,16 @@
   text-align: left;
   color: #404040;
 }
+.sub-head.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
+.sub-head.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
 
 .main-head{
   font-family: Poppins;
@@ -126,6 +196,16 @@
   letter-spacing: normal;
   text-align: left;
   color: #606060;
+}
+.main-head.dark{
+  transition-duration: $td;
+  color: $DarkHederFont;
+
+}
+.main-head.light{
+  transition-duration: $td;
+  color: $LightHederFont;
+
 }
 
 .whoAmI{
@@ -151,7 +231,17 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #000;
+ 
+}
+.Im-neth.dark{
+  transition-duration: $td;
+  color: $DarkHederFont;
+
+}
+.Im-neth.light{
+  transition-duration: $td;
+  color: $LightHederFont;
+
 }
 
 .myDis{
@@ -165,4 +255,24 @@
     letter-spacing: normal;
     text-align: left;
     color: #606060;
+}
+.myDis.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
+.myDis.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
+
+.pageBG.light{
+  transition-duration: $td;
+  background-color: $LightBG;
+}
+
+.pageBG.dark{
+  transition-duration: $td;
+  background-color:$DarkBG;
 }

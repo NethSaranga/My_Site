@@ -1,0 +1,73 @@
+.line-3{
+    width: 3px;
+    height: 500px;
+    // margin-left: 75px;
+  //   transform: rotate(90deg);
+    background-color: #eee;
+    position: absolute;
+}
+
+.resume-heder {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  .resume-heder.dark{
+    transition-duration: $td;
+    color: $DarkHederFont;
+  
+  }
+  .resume-heder.light{
+    transition-duration: $td;
+    color: $LightHederFont;
+  
+  }
+
+.resume-subheder{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    
+}
+.resume-subheder.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
+.resume-subheder.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}
+
+.resume-p{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+.resume-p.dark{
+  transition-duration: $td;
+  color: $DarkcontentText;
+
+}
+.resume-p.light{
+  transition-duration: $td;
+  color: $LightcontentText;
+
+}

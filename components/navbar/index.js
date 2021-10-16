@@ -2,30 +2,67 @@ import Image from "next/image";
 import React, {useState, useEffect} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import {FaPhoneAlt} from "react-icons/fa";
+import { ThemeContext } from "../../context/themecontext";
 
 
 export default function Navbar(props){
+
+    const {theme} = ThemeContext();
+    const themeClass = theme && theme || 'light';
    
+    const [navbar, setNavbar] = useState(false);
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
+    const scrollToBottom = () => {
+        scroll.scrollToBottom();
+    };
+
+    const scrollToAbout = () => {
+        scroll.scrollTo(700);
+    };
+
+    const scrollToResome = () => {
+        scroll.scrollTo(1420);
+    };
+    const scrollToMyskills = () => {
+        scroll.scrollTo(2070);
+    };
+
+    const changeBackground = () => {
+       if( window.scrollY >= 1) {
+           setNavbar(true);
+       }
+       else{
+           setNavbar(false);
+       }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground)
+    }, [])
 
     return (
-        <div className="navBar shadow">
+        <div className={`navBar ${themeClass} shadow`}>
             <div className="">
                 <nav className="flex flex-row ">
                 <div className="list-none  navbar-list items-center  w-full">
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
-                        <li className="inline ml-16  nabBarButn ">Home</li>
+                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
+                        <button className={`inline ml-16  nabBarButn ${themeClass}`} >Home</button>
                     </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
-                        <li className="inline ml-16  nabBarButn ">About me</li>
+                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToAbout}>
+                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>About me</button>
                     </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
-                        <li className="inline ml-16  nabBarButn ">Resume</li>
+                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToResome}>
+                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>Resume</button>
                     </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
-                        <li className="inline ml-16  nabBarButn ">My skills</li>
+                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToMyskills}>
+                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>My skills</button>
                     </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
-                        <li className="inline ml-16  nabBarButn ">Contact me</li>
+                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToBottom}>
+                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>Contact me</button>
                     </Link>
                     
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
