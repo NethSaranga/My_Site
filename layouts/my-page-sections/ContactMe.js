@@ -16,7 +16,7 @@ export default function ContactMe(props){
                 <SectionColumn className="w-1/12  items-start mt-4"> </SectionColumn>
                 <SectionColumn className="w-6/12  items-start mt-4 ml-8">
                     <span className={`Message-Me ${themeClass}`}>Message Me</span>
-                    <form  action="https://formspree.io/f/xayaznlj"  method="POST"> 
+                    <form  > 
                         <SectionRow>
                             <input type="text" name="name" className="name-Rectangle " placeholder="Name" maxLength="50" required="true" />
                             <input type="email" name="email" className="email-Rectangle " placeholder="Email" maxLength="50" required="true"/>
