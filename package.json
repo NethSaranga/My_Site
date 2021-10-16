@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H ::",
-    "build": "next build",
+    "build": "[my-framework] build --output public",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "d3-ease": "^3.0.1",
     "fade": "^0.2.0",
+    "generate": "^0.14.0",
     "next": "11.1.0",
     "react": "17.0.2",
     "react-circular-progressbar": "^2.0.4",
