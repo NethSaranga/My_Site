@@ -5,6 +5,7 @@ import Section, {SectionColumn, SectionRow} from "../common/section";
 import RoundedButton from "../../components/common/RoundedButtons"
 import Image from 'next/image';
 import myLog from "../../public/assets/images/my-n.png";
+import myLogB from "../../public/assets/images/my-nB.png";
 import Fade from 'react-reveal/Fade';
 import { ThemeContext } from "../../context/themecontext";
 
@@ -41,12 +42,24 @@ export default function Home(props){
                 <SectionColumn className="w-6/12 ">
                     <div className="col-span-6 text-center items-center mt-32">   
                         <Fade right>
-                            <Image
-                                    src={myLog}
-                                    width={500}
-                                    height={500}
-                                    alt="M1 Space: Card Change"
-                                    />     
+                            {
+                                themeClass === 'light' ? (
+                                    <Image
+                                        src={myLog}
+                                        width={500}
+                                        height={500}
+                                        alt="M1 Space: Card Change"
+                                        />     
+                                ) : (
+                                    <Image
+                                        src={myLogB}
+                                        width={500}
+                                        height={500}
+                                        alt="M1 Space: Card Change"
+                                        />     
+                                )
+                            }
+                            
                         </Fade>
                     </div>
                 </SectionColumn>

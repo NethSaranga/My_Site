@@ -18,10 +18,14 @@ export default function SideBar(props){
             <span className="S">S</span>
             <span className={`N ${themeClass}`}>N</span>
             <div className="IconsDiv flex flex-col justify-center bottom-10"> 
-               <FaTwitter className={`Icons ${themeClass}`}/>
-               <FaGithub  className={`Icons ${themeClass}`}/>
-               <GrHeroku  className={`Icons ${themeClass}`}/>
-               <GrLinkedin className={`Icons ${themeClass}`}/>
+            <button onClick={() => { window.open("https://github.com/NethSaranga")}}><FaGithub  className={`Icons ${themeClass}`}/></button>
+            <button onClick={() => { window.open("https://www.linkedin.com/in/saranga-jayaneth-33a86617a/")}}><GrLinkedin className={`Icons ${themeClass}`}/></button>
+            <button onClick={() => { window.open("https://github.com/NethSaranga")}}><GrHeroku  className={`Icons ${themeClass}`}/></button>
+            <button onClick={() => { window.open("https://www.facebook.com/profile.php?id=100013362248463")}}><FaFacebookF className={`Icons ${themeClass}`} /></button>
+               
+               
+               
+               
                {
                    theme === "light" ? (
                     <button className="h-10 w-15 ml-6 opacity-70" onClick={e => setTheme('dark')}>

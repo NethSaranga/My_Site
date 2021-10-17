@@ -22,7 +22,7 @@ export default function ContactMe(props){
                     <form  action="https://formspree.io/f/xayaznlj"  method="POST"> 
                         <SectionRow>
                             <input type="text" name="name" className="name-Rectangle " placeholder="Name" maxLength="50" required="true" />
-                            <input type="email" name="email" className="email-Rectangle " placeholder="Email" maxLength="50" required="true"/>
+                            <input type="email" name="email" className="email-Rectangle bg-green-400" placeholder="Email" maxLength="50" required="true"/>
                         </SectionRow>
                         <input type="text" name="subject" className="subject-Rectangle " placeholder="Subject" maxLength="50" required="true" />
                         <input type="text" name="message" className="message-Rectangle " placeholder="Message"  required="true" />
