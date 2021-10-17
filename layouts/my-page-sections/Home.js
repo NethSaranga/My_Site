@@ -31,9 +31,11 @@ export default function Home(props){
                         <br/>
                         <span className={`position ${themeClass}`}>I am a developer</span>
                         <br/>
+                        <a href="tel:+94 719959259">
                         <RoundedButton className="text-center items-center ask-me-how mt-10">
                             <span>Ask me how</span>
                         </RoundedButton>
+                        </a>
                     </div>         
                 </SectionColumn>
                 <SectionColumn className="w-6/12 ">

@@ -66,9 +66,10 @@ export default function Navbar(props){
                     </Link>
                     
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
-                    
+                            <a href="tel:+94 719959259">
                                 <FaPhoneAlt className="inline callLogo absolute right-80 mt-1.5"/>
                                 <li className="inline  ml-4 nabBarcallButn  absolute right-48 mt-0.5" >Schedule a call</li>
+                            </a>
                     </Link>
                     {/* <div className="absolute  top-0">sdsd</div> */}
                 </div>

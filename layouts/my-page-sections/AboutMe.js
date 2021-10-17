@@ -7,9 +7,42 @@ import Fade from 'react-reveal/Fade';
 import { ThemeContext } from "../../context/themecontext";
 
 
+
 export default function AboutMe(props){
     const {theme} = ThemeContext();
     const themeClass = theme && theme || 'light';
+
+
+    //https://pdfhost.io/9540a7ab-dfb4-4ac9-85b7-b6ecbb8972ff
+    function DownloadFile() {
+        //Set the File URL.
+        var url = "http://www.africau.edu/images/default/" + "sample.pdf";
+
+        //Create XMLHTTP Request.
+        var req = new XMLHttpRequest();
+        req.open("GET", url, true);
+        req.responseType = "blob";
+        req.onload = function () {
+            //Convert the Byte Data to BLOB object.
+            var blob = new Blob([req.response], { type: "application/octetstream" });
+
+            //Check the Browser type and download the File.
+            var isIE = false || !!document.documentMode;
+            if (isIE) {
+                window.navigator.msSaveBlob(blob, fileName);
+            } else {
+                var url = window.URL || window.webkitURL;
+                link = url.createObjectURL(blob);
+                var a = document.createElement("a");
+                a.setAttribute("download", fileName);
+                a.setAttribute("href", link);
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        };
+        req.send();
+    }
 
     return(
         <div>
@@ -54,9 +87,11 @@ export default function AboutMe(props){
                         <span className={`email ${themeClass}`}>Location:</span>
                         <span className={`myemail ${themeClass}`}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balangoda, Sri Lanka</span>
                     </SectionRow>
-                    <RoundedButton className="text-center items-center ask-me-how mt-10 mb-10">
-                        <span>Download CV</span>
-                    </RoundedButton>
+                    
+                        <RoundedButton className="text-center items-center ask-me-how mt-10 mb-10" onClick={e =>{DownloadFile}}>
+                            <span>Download CV</span>
+                        </RoundedButton>
+                    
                 </SectionColumn>
             </Section>
         </div>

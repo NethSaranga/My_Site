@@ -8,6 +8,9 @@ import { ThemeContext } from "../../context/themecontext";
 export default function ContactMe(props){
     const {theme} = ThemeContext();
     const themeClass = theme && theme || 'light';
+   
+        
+
     return(
         <div>
               <Section id="aboutme" className={`pageBG ${themeClass}`}>
