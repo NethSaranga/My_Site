@@ -41,7 +41,7 @@ export default function Resume(props){
 
                 </SectionColumn>
                 <SectionColumn className="w-1/12  items-center mt-4">
-                    <div className="line-3"></div> 
+                    <div className={`line-3 ${themeClass}`}></div> 
                 </SectionColumn>
                 <SectionColumn className="w-5/12  items-center mt-4">
                     <span className="whoAmI">Experience</span>

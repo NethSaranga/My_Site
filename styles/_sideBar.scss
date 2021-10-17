@@ -18,7 +18,14 @@
   height: 100vh;
   margin-left: 75px;
 //   transform: rotate(90deg);
-  background-color: #eee;
+}
+.line-1.light{
+  transition-duration: $td;
+  background-color: $LightLineColor;
+}
+.line-1.dark{
+  transition-duration: $td;
+  background-color: $DarkLineColor;
 }
 
 .N{

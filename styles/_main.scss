@@ -102,6 +102,14 @@
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+
+
+}
+
+.ask-me-how:hover {
+  transition-duration: 300ms;
+  box-shadow: 0 0 10px 0 #fd3c3c inset, 0 0 20px 2px #ff3d3d;
+  border: 3px solid #fa2727;
 }
 
 .myLogodiv{
@@ -161,7 +169,15 @@
     height: 50px;
     // margin: 64px 54px 78px 45px;
     // transform: rotate(90deg);
-    background-color: #eee;
+}
+
+.line-2.light{
+  transition-duration: $td;
+  background-color: $LightLineColor;
+}
+.line-2.dark{
+  transition-duration: $td;
+  background-color: $DarkLineColor;
 }
 
 .sub-head{

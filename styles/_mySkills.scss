@@ -3,8 +3,17 @@
     height: 450px;
     // margin-left: 75px;
   //   transform: rotate(90deg);
-    background-color: #eee;
+   
     position: absolute;
+}
+
+.line-4.light{
+  transition-duration: $td;
+  background-color: $LightLineColor;
+}
+.line-4.dark{
+  transition-duration: $td;
+  background-color: $DarkLineColor;
 }
 
 .skill-bars .bar{

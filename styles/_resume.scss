@@ -3,10 +3,18 @@
     height: 500px;
     // margin-left: 75px;
   //   transform: rotate(90deg);
-    background-color: #eee;
+
     position: absolute;
 }
 
+.line-3.light{
+  transition-duration: $td;
+  background-color: $LightLineColor;
+}
+.line-3.dark{
+  transition-duration: $td;
+  background-color: $DarkLineColor;
+}
 .resume-heder {
     font-family: Poppins;
     font-size: 25px;

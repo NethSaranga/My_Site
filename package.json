@@ -23,7 +23,9 @@
     "react-toggle": "^4.1.2",
     "sass": "^1.38.1",
     "slick": "^1.12.2",
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "typed.js": "^2.0.12",
+    "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.3",

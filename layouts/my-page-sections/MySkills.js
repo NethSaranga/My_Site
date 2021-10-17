@@ -71,7 +71,7 @@ export default function MySkills(props){
                     </Fade>
                 </SectionColumn>
                 <SectionColumn className="w-1/12  items-center mt-4">
-                    <div className="line-4"></div> 
+                    <div className={`line-4 ${themeClass}`}></div> 
                 </SectionColumn>
                 <SectionColumn className="w-5/12  items-center mt-12">
                 <Fade bottom>

@@ -21,11 +21,11 @@ export default function ContactMe(props){
                     <span className={`Message-Me ${themeClass}`}>Message Me</span>
                     <form  action="https://formspree.io/f/xayaznlj"  method="POST"> 
                         <SectionRow>
-                            <input type="text" name="name" className="name-Rectangle " placeholder="Name" maxLength="50" required="true" />
-                            <input type="email" name="email" className="email-Rectangle bg-green-400" placeholder="Email" maxLength="50" required="true"/>
+                            <input type="text" name="name" className="name-Rectangle focus:outline-none " placeholder="Name" maxLength="50" required="true" />
+                            <input type="email" name="email" className="email-Rectangle focus:outline-none " placeholder="Email" maxLength="50" required="true"/>
                         </SectionRow>
-                        <input type="text" name="subject" className="subject-Rectangle " placeholder="Subject" maxLength="50" required="true" />
-                        <input type="text" name="message" className="message-Rectangle " placeholder="Message"  required="true" />
+                        <input type="text" name="subject" className="subject-Rectangle focus:outline-none " placeholder="Subject" maxLength="50" required="true" />
+                        <input type="text" name="message" className="message-Rectangle focus:outline-none " placeholder="Message"  required="true" />
                         <RoundedButton className="text-center items-center ask-me-how mt-10 mb-28" type="submit">
                                 <span>Send Message</span>
                             </RoundedButton>
@@ -37,7 +37,7 @@ export default function ContactMe(props){
                     <span className={`Message-Me ${themeClass}`}>Contact Info</span>
                     <span className={`contactInfo-p ${themeClass}`}>Always available for freelance work if the right project comes along, Feel free to contact me!</span>
                     <SectionColumn>
-                        <div className="Line-5"></div>
+                        <div className={`line-5 ${themeClass}`}></div>
                         <SectionColumn className="">  
                                 <span className={`Cemail ${themeClass}`}>Name</span>
                                 <span className={`Cmyemail ${themeClass}`}>Jayneth Saranga</span>

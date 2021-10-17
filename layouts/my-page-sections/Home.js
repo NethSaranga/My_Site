@@ -8,6 +8,7 @@ import myLog from "../../public/assets/images/my-n.png";
 import myLogB from "../../public/assets/images/my-nB.png";
 import Fade from 'react-reveal/Fade';
 import { ThemeContext } from "../../context/themecontext";
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -30,10 +31,27 @@ export default function Home(props){
                         <span className="inline IamS">S</span>
                         <span className={`inline Iam ${themeClass}`}>aranga</span>
                         <br/>
-                        <span className={`position ${themeClass}`}>I am a developer</span>
+                        <span className={`inline position ${themeClass}`}>
+                        <SectionRow>
+                            <span>I am a &nbsp;</span>
+                            <Typewriter
+                                options={{
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 40,
+                                    strings: [
+                                        "full stack Developer",
+                                        "video editer",
+                                        "photographer",
+                                    ],
+                                }}
+                            />
+                        </SectionRow>
+                            
+                        </span>
                         <br/>
                         <a href="tel:+94 719959259">
-                        <RoundedButton className="text-center items-center ask-me-how mt-10">
+                        <RoundedButton className="text-center items-center ask-me-how mt-10 ">
                             <span>Ask me how</span>
                         </RoundedButton>
                         </a>
@@ -41,26 +59,30 @@ export default function Home(props){
                 </SectionColumn>
                 <SectionColumn className="w-6/12 ">
                     <div className="col-span-6 text-center items-center mt-32">   
-                        <Fade right>
+                        
                             {
                                 themeClass === 'light' ? (
-                                    <Image
-                                        src={myLog}
-                                        width={500}
-                                        height={500}
-                                        alt="M1 Space: Card Change"
-                                        />     
+                                    <Fade right>
+                                        <Image
+                                            src={myLog}
+                                            width={500}
+                                            height={500}
+                                            alt="M1 Space: Card Change"
+                                            />  
+                                    </Fade>   
                                 ) : (
+                                    <Fade right>
                                     <Image
                                         src={myLogB}
                                         width={500}
                                         height={500}
                                         alt="M1 Space: Card Change"
-                                        />     
+                                        />  
+                                    </Fade>    
                                 )
                             }
                             
-                        </Fade>
+                        
                     </div>
                 </SectionColumn>
                 <SectionRow className="w-full">
@@ -69,12 +91,12 @@ export default function Home(props){
                             <span className={`myemail ${themeClass}`}>lakshithajayanethsaranga@gmail.com</span>    
                     </SectionColumn>
                     
-                    <div className="line-2 mr-14"/>
+                    <div className={`line-2 ${themeClass}  mr-14`}/>
                     <SectionColumn className="w-40">
                         <span className={`email ${themeClass}`}>Phone</span>
                         <span className={`myemail ${themeClass}`}>+94-71-9959259</span>
                     </SectionColumn>
-                    <div className="line-2 mr-14"/>
+                    <div className={`line-2 ${themeClass}  mr-14`}/>
                     <SectionColumn className="w-40">
                         <span className={`email ${themeClass}`}>Location</span>
                         <span className={`myemail ${themeClass}`}>Balangoda, Sri Lanka</span>

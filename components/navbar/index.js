@@ -50,25 +50,25 @@ export default function Navbar(props){
                 <nav className="flex flex-row ">
                 <div className="list-none  navbar-list items-center  w-full">
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass}`} >Home</button>
+                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `} >Home</button>
                     </Link>
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToAbout}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>About me</button>
+                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>About me</button>
                     </Link>
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToResome}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>Resume</button>
+                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>Resume</button>
                     </Link>
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToMyskills}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>My skills</button>
+                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>My skills</button>
                     </Link>
                     <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToBottom}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass}`}>Contact me</button>
+                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>Contact me</button>
                     </Link>
                     
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} >
+                    <Link activeClass="active" to="" spy={true} smooth={true} >
                             <a href="tel:+94 719959259">
-                                <FaPhoneAlt className="inline callLogo absolute right-80 mt-1.5"/>
-                                <li className="inline  ml-4 nabBarcallButn  absolute right-48 mt-0.5" >Schedule a call</li>
+                                <FaPhoneAlt className="inline callLogo absolute right-80 mt-1.5 "/>
+                                <li className="inline  ml-4 nabBarcallButn  absolute right-48 mt-0.5 transform hover:scale-105 motion-reduce:transform-none" >Schedule a call</li>
                             </a>
                     </Link>
                     {/* <div className="absolute  top-0">sdsd</div> */}
