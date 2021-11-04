@@ -17,28 +17,30 @@ export default function ContactMe(props){
                 <SectionColumn className={`w-full items-center ml-20 mt-28 sub-head  ${themeClass}`}>Feel free to contact me anytime</SectionColumn>
                 <SectionColumn className={`w-full items-center ml-20  main-head  ${themeClass}`}>Get in Touch</SectionColumn>
                 <SectionColumn className="w-1/12  items-start mt-4"> </SectionColumn>
-                <SectionColumn className="w-6/12  items-start mt-4 ml-8">
+                <SectionColumn className="w-6/12 md:w-full md:items-center md:ml-24  items-start mt-4 ml-8">
                     <span className={`Message-Me ${themeClass}`}>Message Me</span>
-                    <form  action="https://formspree.io/f/xayaznlj"  method="POST"> 
+                    <form  action="https://formspree.io/f/xayaznlj"  method="POST" > 
                         <SectionRow>
                             <input type="text" name="name" className="name-Rectangle focus:outline-none " placeholder="Name" maxLength="50" required="true" />
                             <input type="email" name="email" className="email-Rectangle focus:outline-none " placeholder="Email" maxLength="50" required="true"/>
                         </SectionRow>
                         <input type="text" name="subject" className="subject-Rectangle focus:outline-none " placeholder="Subject" maxLength="50" required="true" />
-                        <input type="text" name="message" className="message-Rectangle focus:outline-none " placeholder="Message"  required="true" />
-                        <RoundedButton className="text-center items-center ask-me-how mt-10 mb-28" type="submit">
-                                <span>Send Message</span>
+                        <input type="text" name="message" className="message-Rectangle focus:outline-none " placeholder="Message"  required="true" /><br/>
+                       
+                            <RoundedButton className="text-center items-center ask-me-how mt-10 mb-28" type="submit">
+                                    <span>Send Message</span>
                             </RoundedButton>
+               
                     </form>
                     
                 </SectionColumn>
                 
-                <SectionColumn className="w-4/12  items-start mt-4">
+                <SectionColumn className="w-4/12 md:w-full md:items-center md:ml-20   items-start mt-4">
                     <span className={`Message-Me ${themeClass}`}>Contact Info</span>
                     <span className={`contactInfo-p ${themeClass}`}>Always available for freelance work if the right project comes along, Feel free to contact me!</span>
                     <SectionColumn>
-                        <div className={`line-5 ${themeClass}`}></div>
-                        <SectionColumn className="">  
+                        <div className={`line-5 ${themeClass} md:hidden`}></div>
+                        <SectionColumn className="md:ml-20 ">  
                                 <span className={`Cemail ${themeClass}`}>Name</span>
                                 <span className={`Cmyemail ${themeClass}`}>Jayneth Saranga</span>
                                 <span className={`Cemail ${themeClass}`}>Email</span>

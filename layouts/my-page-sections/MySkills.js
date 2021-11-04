@@ -15,7 +15,7 @@ export default function MySkills(props){
               <Section id="aboutme" className={`pageBG ${themeClass}`}>
                 <SectionColumn className={`w-full items-center ml-20 mt-20 sub-head  ${themeClass}`}>My level of knowledge in some tools</SectionColumn>
                 <SectionColumn className={`w-full items-center ml-20  main-head  ${themeClass}`}>My Skills</SectionColumn>
-                <SectionColumn className="w-6/12  items-center mt-12 ">
+                <SectionColumn className="w-6/12 md:w-full md:ml-20 items-center mt-12 ">
                     <Fade bottom>
 
                     <div className="skill-bars">
@@ -70,10 +70,10 @@ export default function MySkills(props){
                     </div>
                     </Fade>
                 </SectionColumn>
-                <SectionColumn className="w-1/12  items-center mt-4">
+                <SectionColumn className="w-1/12 md:hidden items-center mt-4">
                     <div className={`line-4 ${themeClass}`}></div> 
                 </SectionColumn>
-                <SectionColumn className="w-5/12  items-center mt-12">
+                <SectionColumn className="w-5/12 md:w-full md:ml-20 items-center mt-12">
                 <Fade bottom>
                     <div className="skill-bars">
                         <div className="bar">

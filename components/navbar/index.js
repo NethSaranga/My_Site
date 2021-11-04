@@ -3,12 +3,20 @@ import React, {useState, useEffect} from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import {FaPhoneAlt} from "react-icons/fa";
 import { ThemeContext } from "../../context/themecontext";
+import menu from "../../public/assets/images/icons/menu.png";
+import close from "../../public/assets/images/icons/close.png";
+import {AiOutlineMenu} from "react-icons/ai";
+
+
+
+
 
 
 export default function Navbar(props){
 
     const {theme} = ThemeContext();
     const themeClass = theme && theme || 'light';
+    
    
     const [navbar, setNavbar] = useState(false);
 
@@ -48,31 +56,40 @@ export default function Navbar(props){
         <div className={`navBar ${themeClass} shadow`}>
             <div className="">
                 <nav className="flex flex-row ">
-                <div className="list-none  navbar-list items-center  w-full">
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `} >Home</button>
-                    </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToAbout}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>About me</button>
-                    </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToResome}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>Resume</button>
-                    </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToMyskills}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>My skills</button>
-                    </Link>
-                    <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToBottom}>
-                        <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>Contact me</button>
-                    </Link>
-                    
-                    <Link activeClass="active" to="" spy={true} smooth={true} >
-                            <a href="tel:+94 719959259">
-                                <FaPhoneAlt className="inline callLogo absolute right-80 mt-1.5 "/>
-                                <li className="inline  ml-4 nabBarcallButn  absolute right-48 mt-0.5 transform hover:scale-105 motion-reduce:transform-none" >Schedule a call</li>
-                            </a>
-                    </Link>
-                    {/* <div className="absolute  top-0">sdsd</div> */}
-                </div>
+                    <div className="list-none  navbar-list items-center  w-full">
+                        <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToTop}>
+                            <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `} >Home</button>
+                        </Link>
+                        <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToAbout}>
+                            <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>About me</button>
+                        </Link>
+                        <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToResome}>
+                            <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>Resume</button>
+                        </Link>
+                        <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToMyskills}>
+                            <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>My skills</button>
+                        </Link>
+                        <Link activeClass="active" to="" spy={true} smooth={true} offset={-70} duration={500} onClick={scrollToBottom}>
+                            <button className={`inline ml-16  nabBarButn ${themeClass} transform hover:scale-110 motion-reduce:transform-none `}>Contact me</button>
+                        </Link>
+                        
+                        <Link activeClass="active" to="" spy={true} smooth={true} >
+                                <a href="tel:+94 719959259">
+                                    <FaPhoneAlt className="inline callLogo absolute right-80 mt-1.5 "/>
+                                    <li className="inline  ml-4 nabBarcallButn  absolute right-48 mt-0.5 transform hover:scale-105 motion-reduce:transform-none" >Schedule a call</li>
+                                </a>
+                        </Link>
+                        
+
+                        {/* <div className="absolute  top-0">sdsd</div> */}
+                    </div>
+                    <div className="Navbartext">
+                        <span className={`inline IamNav ${themeClass}`}>Neth_</span>
+                        <span className="inline IamSNav">S</span>
+                        <span className={`inline IamNav ${themeClass}`}>aranga</span>
+                    </div>
+                    <button onClick={() => ""}><AiOutlineMenu className={`menu-btn ${themeClass} transform hover:scale-110 motion-reduce:transform-none absolute right-32 mobileM:right-20 mobileL:right-20 tabs:right-20 bottom-5`} /></button>
+                  
                 </nav>
             </div>
         </div>

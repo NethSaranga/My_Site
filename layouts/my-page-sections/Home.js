@@ -23,7 +23,7 @@ export default function Home(props){
 
           
             <Section id="home" className={`pageBG ${themeClass}`}>
-                <SectionColumn className="w-6/12  items-start mt-14">
+                <SectionColumn className="w-6/12 md:w-full items-start mt-14 md:mt-0">
                     <div className="pt-44 pl-40">
                         <span className={`hithere ${themeClass}`}>Hi There,</span>
                         <br/>
@@ -51,13 +51,13 @@ export default function Home(props){
                         </span>
                         <br/>
                         <a href="tel:+94 719959259">
-                        <RoundedButton className="text-center items-center ask-me-how mt-10 ">
+                        <RoundedButton className="text-center items-center ask-me-how mt-10 md:mt-0 md:mb-10">
                             <span>Ask me how</span>
                         </RoundedButton>
                         </a>
                     </div>         
                 </SectionColumn>
-                <SectionColumn className="w-6/12 ">
+                <SectionColumn className="w-6/12 md:hidden">
                     <div className="col-span-6 text-center items-center mt-32">   
                         
                             {
@@ -85,7 +85,7 @@ export default function Home(props){
                         
                     </div>
                 </SectionColumn>
-                <SectionRow className="w-full">
+                <SectionRow className="w-full md:hidden">
                     <SectionColumn className="pl-40">  
                             <span className={`email ${themeClass}`}>Email</span>
                             <span className={`myemail ${themeClass}`}>lakshithajayanethsaranga@gmail.com</span>    
@@ -94,7 +94,7 @@ export default function Home(props){
                     <div className={`line-2 ${themeClass}  mr-14`}/>
                     <SectionColumn className="w-40">
                         <span className={`email ${themeClass}`}>Phone</span>
-                        <span className={`myemail ${themeClass}`}>+94-71-9959259</span>
+                        <span className={`myemail ${themeClass}`}>+94 71-9959259</span>
                     </SectionColumn>
                     <div className={`line-2 ${themeClass}  mr-14`}/>
                     <SectionColumn className="w-40">

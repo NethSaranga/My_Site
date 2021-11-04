@@ -60,3 +60,108 @@
     // margin-left: 550px;
     
 }
+
+.navbar-list{
+  display: inline;
+  @media #{$md-layout}  {
+    display: none;
+  }
+  @media #{$xs-layout}  {
+    display: none;
+  }
+}
+
+.menu-btn{
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  opacity: 0.5;
+  display: none;
+  @media #{$xs-layout}  {
+    display: flex;
+  }
+  @media #{$md-layout}  {
+    display: flex;
+  }
+}
+.menu-btn.dark{
+color: $DarkHederFont;
+opacity: 1;
+}
+
+
+.IamNav{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: -8px;
+    @media #{$mobileL-layout}  {
+      font-size: 25px;
+      margin-top: -5px;
+    }
+    @media #{$mobileM-layout}  {
+      font-size: 20px;
+      margin-top: 0px;
+    }
+  }
+  
+  .IamNav.light{
+    transition-duration: $td;
+    color: $LightHederFont;
+  
+  }
+  .IamNav.dark{
+    transition-duration: $td;
+    color: $DarkHederFont;
+  
+  }
+
+  .IamSNav{
+      font-family: Poppins;
+      font-size: 28px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ff4747;
+      margin-top: -8px;
+      @media #{$mobileL-layout}  {
+        font-size: 25px;
+        margin-top: -5px;
+
+      }
+      @media #{$mobileM-layout}  {
+        font-size: 20px;
+        margin-top: 0px;
+      }
+    }
+
+
+.Navbartext{
+  width: 85%;
+  display: none;
+  
+  @media #{$xs-layout}  {
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+  }
+  @media #{$md-layout}  {
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+  }
+  @media #{$mobileL-layout}  {
+    width: 80%;
+  }
+  @media #{$mobileM-layout}  {
+    width: 75%;
+  }
+}

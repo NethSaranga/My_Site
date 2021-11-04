@@ -12,7 +12,7 @@ export default function Resume(props){
               <Section id="aboutme" className={`pageBG ${themeClass}`}>
                 <SectionColumn className={`w-full items-center ml-20 mt-20 sub-head  ${themeClass}`}>Check out my resume</SectionColumn>
                 <SectionColumn className={`w-full items-center ml-20  main-head  ${themeClass}`}>Resume</SectionColumn>
-                <SectionColumn className="w-6/12  items-center mt-4">
+                <SectionColumn className="w-6/12 md:w-full md:ml-20  items-center mt-4">
                     <span className="whoAmI">Education</span>
                     <Fade bottom>
                         <SectionColumn className="w-full items-center ">
@@ -40,10 +40,10 @@ export default function Resume(props){
 
 
                 </SectionColumn>
-                <SectionColumn className="w-1/12  items-center mt-4">
+                <SectionColumn className="w-1/12 md:hidden  items-center mt-4">
                     <div className={`line-3 ${themeClass}`}></div> 
                 </SectionColumn>
-                <SectionColumn className="w-5/12  items-center mt-4">
+                <SectionColumn className="w-5/12  md:w-full md:ml-20  items-center mt-4">
                     <span className="whoAmI">Experience</span>
                     <Fade bottom>
                         <SectionColumn className="w-full items-center ">

@@ -142,6 +142,11 @@
   text-align: left;
   color: #606060;
   margin-top: 1px;
+
+  @media #{$md-layout}  {
+    width: 200px;
+  }
+
 }
 .email.light{
   transition-duration: $td;
